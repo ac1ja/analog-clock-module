@@ -1,0 +1,59 @@
+05-29 12:27:57 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 392:Plugin executed on: 'linux'
+05-29 12:27:57 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 393:Plugin executed with python version: '3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0]'
+05-29 12:27:57 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 394:KiCad build version: 7.0.11-7.0.11~ubuntu22.04.1
+05-29 12:27:57 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 395:Plugin version: 2.1.3
+05-29 12:27:57 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 396:Frame repr: <wx._core.Frame object at 0x7f3e50706710>
+05-29 12:27:57 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 420:Preparing replicator with D201 as a reference
+05-29 12:27:57 com_github_MitjaNemec_ReplicateLayout.replicate_layout 117:getting a list of all footprints on board
+05-29 12:27:57 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 468:source anchor footprint is 'D201'
+Located on: ['Hour1', 'Clock Inner Hand1']
+With filenames: ['/home/joe/git/analog-clock-module/Hardware/analog-clock-module/hour.kicad_sch', '/home/joe/git/analog-clock-module/Hardware/analog-clock-module/ClockInnerHand.kicad_sch']
+With sheet_id:['Hour1', 'Clock Inner Hand1']
+05-29 12:27:57 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 475:Corresponding footprints are 
+[('D1301', ['Hour2', 'Clock Inner Hand4']), ('D1201', ['Hour2', 'Clock Inner Hand3']), ('D1101', ['Hour2', 'Clock Inner Hand5']), ('D1001', ['Hour2', 'Clock Inner Hand2']), ('D901', ['Hour2', 'Clock Inner Hand1']), ('D301', ['Hour1', 'Clock Inner Hand2']), ('D701', ['Hour1', 'Clock Inner Hand5']), ('D601', ['Hour1', 'Clock Inner Hand4']), ('D501', ['Hour1', 'Clock Inner Hand3']), ('D201', ['Hour1', 'Clock Inner Hand1'])]
+05-29 12:27:57 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 487:Showing dialog
+05-29 12:27:57 com_github_MitjaNemec_ReplicateLayout.replicate_layout 424:constructing a list of sheets suitable for replication on level:'Clock Inner Hand1', file:'/home/joe/git/analog-clock-module/Hardware/analog-clock-module/ClockInnerHand.kicad_sch'
+05-29 12:27:57 com_github_MitjaNemec_ReplicateLayout.replicate_layout 461:suitable sheets are:[['Hour1', 'Clock Inner Hand2'], ['Hour1', 'Clock Inner Hand3'], ['Hour1', 'Clock Inner Hand4'], ['Hour1', 'Clock Inner Hand5'], ['Hour2', 'Clock Inner Hand1'], ['Hour2', 'Clock Inner Hand2'], ['Hour2', 'Clock Inner Hand3'], ['Hour2', 'Clock Inner Hand4'], ['Hour2', 'Clock Inner Hand5']]
+05-29 12:27:57 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1464:Level selected: ['Hour1', 'Clock Inner Hand1']
+05-29 12:27:57 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1299:Filtering list of tracks
+05-29 12:27:57 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 493:Toolbar position: wx.Point(5726, 89)
+05-29 12:27:57 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 498:Dialog position: wx.Point(5287, 89)
+05-29 12:28:02 com_github_MitjaNemec_ReplicateLayout.replicate_layout 424:constructing a list of sheets suitable for replication on level:'Hour1', file:'/home/joe/git/analog-clock-module/Hardware/analog-clock-module/hour.kicad_sch'
+05-29 12:28:02 com_github_MitjaNemec_ReplicateLayout.replicate_layout 461:suitable sheets are:[['Hour2']]
+05-29 12:28:03 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1464:Level selected: ['Hour1']
+05-29 12:28:03 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1299:Filtering list of tracks
+05-29 12:28:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 424:constructing a list of sheets suitable for replication on level:'Hour1', file:'/home/joe/git/analog-clock-module/Hardware/analog-clock-module/hour.kicad_sch'
+05-29 12:28:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 461:suitable sheets are:[['Hour2']]
+05-29 12:28:13 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 240:Replicating layout
+05-29 12:28:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 240:Starting replication of sheets: [['Hour2']]
+on level: ['Hour1']
+with tracks=True, zone=True, text=True, text=True, intersecting=False, remove=False, locked footprints=False, group_only=False
+05-29 12:28:13 root 332:updating GUI message: 'Preparing for replication'
+05-29 12:28:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 310:Getting the list of source footprints
+05-29 12:28:13 root 337:updating GUI with: 0
+05-29 12:28:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 320:Getting the list of all the remaining footprints
+05-29 12:28:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 327:Getting source tracks
+05-29 12:28:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1299:Filtering list of tracks
+05-29 12:28:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 331:Getting source zones
+05-29 12:28:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 335:Getting source text items
+05-29 12:28:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 339:Getting source drawing items
+05-29 12:28:13 root 332:updating GUI message: 'Replicating footprints'
+05-29 12:28:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 806:Replicating footprints
+05-29 12:28:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 813:Replicating footprints on sheet ['Hour2']
+05-29 12:28:13 root 332:updating GUI message: 'Replicating tracks'
+05-29 12:28:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 977:Replicating tracks
+05-29 12:28:13 root 337:updating GUI with: 0
+05-29 12:28:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 983:Replicating tracks on sheet ['Hour2']
+05-29 12:28:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 766:Net pairs for sheet ['Hour2'] :[('unconnected-(D310-DOUT-Pad1)', 'unconnected-(D1010-DOUT-Pad1)'), ('Net-(D508-DOUT)', 'Net-(D1208-DOUT)'), ('Net-(D607-DOUT)', 'Net-(D1307-DOUT)'), ('Net-(D608-DOUT)', 'Net-(D1308-DOUT)'), ('Net-(D304-DOUT)', 'Net-(D1004-DOUT)'), ('Net-(D204-DOUT)', 'Net-(D904-DOUT)'), ('Net-(D602-DOUT)', 'Net-(D1302-DOUT)'), ('Net-(D308-DOUT)', 'Net-(D1008-DOUT)'), ('Net-(D502-DOUT)', 'Net-(D1202-DOUT)'), ('Net-(D202-DOUT)', 'Net-(D902-DOUT)'), ('Net-(D504-DOUT)', 'Net-(D1204-DOUT)'), ('Net-(D705-DOUT)', 'Net-(D1105-DOUT)'), ('unconnected-(D710-DOUT-Pad1)', 'unconnected-(D1110-DOUT-Pad1)'), ('Net-(D604-DOUT)', 'Net-(D1304-DOUT)'), ('/Hour1/Clock Inner Hand1/DOUT', '/Hour2/Clock Inner Hand1/DOUT'), ('Net-(D702-DOUT)', 'Net-(D1102-DOUT)'), ('Net-(D201-DOUT)', 'Net-(D901-DOUT)'), ('GND', 'GND'), ('unconnected-(D510-DOUT-Pad1)', 'unconnected-(D1210-DOUT-Pad1)'), ('Net-(D603-DOUT)', 'Net-(D1303-DOUT)'), ('Net-(D309-DOUT)', 'Net-(D1009-DOUT)'), ('Net-(D701-DOUT)', 'Net-(D1101-DOUT)'), ('Net-(D301-DOUT)', 'Net-(D1001-DOUT)'), ('Net-(D601-DOUT)', 'Net-(D1301-DOUT)'), ('Net-(D507-DOUT)', 'Net-(D1207-DOUT)'), ('Net-(D307-DOUT)', 'Net-(D1007-DOUT)'), ('Net-(D207-DOUT)', 'Net-(D907-DOUT)'), ('Net-(D203-DOUT)', 'Net-(D903-DOUT)'), ('Net-(D302-DOUT)', 'Net-(D1002-DOUT)'), ('Net-(D707-DOUT)', 'Net-(D1107-DOUT)'), ('Net-(D704-DOUT)', 'Net-(D1104-DOUT)'), ('/Hour1/Clock Inner Hand2/DOUT', '/Hour2/Clock Inner Hand2/DOUT'), ('Net-(D606-DOUT)', 'Net-(D1306-DOUT)'), ('unconnected-(D210-DOUT-Pad1)', 'unconnected-(D910-DOUT-Pad1)'), ('Net-(D703-DOUT)', 'Net-(D1103-DOUT)'), ('Net-(D609-DOUT)', 'Net-(D1309-DOUT)'), ('Net-(D208-DOUT)', 'Net-(D908-DOUT)'), ('Net-(D605-DOUT)', 'Net-(D1305-DOUT)'), ('Net-(D708-DOUT)', 'Net-(D1108-DOUT)'), ('Net-(D206-DOUT)', 'Net-(D906-DOUT)'), ('Net-(D305-DOUT)', 'Net-(D1005-DOUT)'), ('/Hour1/Clock Inner Hand4/DOUT', '/Hour2/Clock Inner Hand4/DOUT'), ('Net-(D505-DOUT)', 'Net-(D1205-DOUT)'), ('unconnected-(D610-DOUT-Pad1)', 'unconnected-(D1310-DOUT-Pad1)'), ('Net-(D509-DOUT)', 'Net-(D1209-DOUT)'), ('Net-(D709-DOUT)', 'Net-(D1109-DOUT)'), ('Net-(D506-DOUT)', 'Net-(D1206-DOUT)'), ('Net-(D501-DOUT)', 'Net-(D1201-DOUT)'), ('Net-(D306-DOUT)', 'Net-(D1006-DOUT)'), ('/Hour1/Clock Inner Hand3/DOUT', '/Hour2/Clock Inner Hand3/DOUT'), ('Net-(D706-DOUT)', 'Net-(D1106-DOUT)'), ('/Hour1/DIN', '/Hour2/DIN'), ('Net-(D503-DOUT)', 'Net-(D1203-DOUT)'), ('Net-(D303-DOUT)', 'Net-(D1003-DOUT)'), ('Net-(D209-DOUT)', 'Net-(D909-DOUT)'), ('+5V', '+5V'), ('Net-(D205-DOUT)', 'Net-(D905-DOUT)')]
+05-29 12:28:13 root 332:updating GUI message: 'Replicating zones'
+05-29 12:28:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1047:Replicating zones
+05-29 12:28:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1054:Replicating zones on sheet ['Hour2']
+05-29 12:28:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 766:Net pairs for sheet ['Hour2'] :[('unconnected-(D310-DOUT-Pad1)', 'unconnected-(D1010-DOUT-Pad1)'), ('Net-(D508-DOUT)', 'Net-(D1208-DOUT)'), ('Net-(D607-DOUT)', 'Net-(D1307-DOUT)'), ('Net-(D608-DOUT)', 'Net-(D1308-DOUT)'), ('Net-(D304-DOUT)', 'Net-(D1004-DOUT)'), ('Net-(D204-DOUT)', 'Net-(D904-DOUT)'), ('Net-(D602-DOUT)', 'Net-(D1302-DOUT)'), ('Net-(D308-DOUT)', 'Net-(D1008-DOUT)'), ('Net-(D502-DOUT)', 'Net-(D1202-DOUT)'), ('Net-(D202-DOUT)', 'Net-(D902-DOUT)'), ('Net-(D504-DOUT)', 'Net-(D1204-DOUT)'), ('Net-(D705-DOUT)', 'Net-(D1105-DOUT)'), ('unconnected-(D710-DOUT-Pad1)', 'unconnected-(D1110-DOUT-Pad1)'), ('Net-(D604-DOUT)', 'Net-(D1304-DOUT)'), ('/Hour1/Clock Inner Hand1/DOUT', '/Hour2/Clock Inner Hand1/DOUT'), ('Net-(D702-DOUT)', 'Net-(D1102-DOUT)'), ('Net-(D201-DOUT)', 'Net-(D901-DOUT)'), ('GND', 'GND'), ('unconnected-(D510-DOUT-Pad1)', 'unconnected-(D1210-DOUT-Pad1)'), ('Net-(D603-DOUT)', 'Net-(D1303-DOUT)'), ('Net-(D309-DOUT)', 'Net-(D1009-DOUT)'), ('Net-(D701-DOUT)', 'Net-(D1101-DOUT)'), ('Net-(D301-DOUT)', 'Net-(D1001-DOUT)'), ('Net-(D601-DOUT)', 'Net-(D1301-DOUT)'), ('Net-(D507-DOUT)', 'Net-(D1207-DOUT)'), ('Net-(D307-DOUT)', 'Net-(D1007-DOUT)'), ('Net-(D207-DOUT)', 'Net-(D907-DOUT)'), ('Net-(D203-DOUT)', 'Net-(D903-DOUT)'), ('Net-(D302-DOUT)', 'Net-(D1002-DOUT)'), ('Net-(D707-DOUT)', 'Net-(D1107-DOUT)'), ('Net-(D704-DOUT)', 'Net-(D1104-DOUT)'), ('/Hour1/Clock Inner Hand2/DOUT', '/Hour2/Clock Inner Hand2/DOUT'), ('Net-(D606-DOUT)', 'Net-(D1306-DOUT)'), ('unconnected-(D210-DOUT-Pad1)', 'unconnected-(D910-DOUT-Pad1)'), ('Net-(D703-DOUT)', 'Net-(D1103-DOUT)'), ('Net-(D609-DOUT)', 'Net-(D1309-DOUT)'), ('Net-(D208-DOUT)', 'Net-(D908-DOUT)'), ('Net-(D605-DOUT)', 'Net-(D1305-DOUT)'), ('Net-(D708-DOUT)', 'Net-(D1108-DOUT)'), ('Net-(D206-DOUT)', 'Net-(D906-DOUT)'), ('Net-(D305-DOUT)', 'Net-(D1005-DOUT)'), ('/Hour1/Clock Inner Hand4/DOUT', '/Hour2/Clock Inner Hand4/DOUT'), ('Net-(D505-DOUT)', 'Net-(D1205-DOUT)'), ('unconnected-(D610-DOUT-Pad1)', 'unconnected-(D1310-DOUT-Pad1)'), ('Net-(D509-DOUT)', 'Net-(D1209-DOUT)'), ('Net-(D709-DOUT)', 'Net-(D1109-DOUT)'), ('Net-(D506-DOUT)', 'Net-(D1206-DOUT)'), ('Net-(D501-DOUT)', 'Net-(D1201-DOUT)'), ('Net-(D306-DOUT)', 'Net-(D1006-DOUT)'), ('/Hour1/Clock Inner Hand3/DOUT', '/Hour2/Clock Inner Hand3/DOUT'), ('Net-(D706-DOUT)', 'Net-(D1106-DOUT)'), ('/Hour1/DIN', '/Hour2/DIN'), ('Net-(D503-DOUT)', 'Net-(D1203-DOUT)'), ('Net-(D303-DOUT)', 'Net-(D1003-DOUT)'), ('Net-(D209-DOUT)', 'Net-(D909-DOUT)'), ('+5V', '+5V'), ('Net-(D205-DOUT)', 'Net-(D905-DOUT)')]
+05-29 12:28:13 root 332:updating GUI message: 'Replicating text'
+05-29 12:28:13 root 337:updating GUI with: 0
+05-29 12:28:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1136:Replicating text
+05-29 12:28:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1143:Replicating text on sheet ['Hour2']
+05-29 12:28:13 root 332:updating GUI message: 'Replicating drawings'
+05-29 12:28:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1187:Replicating drawings
+05-29 12:28:13 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1193:Replicating drawings on sheet ['Hour2']
+05-29 12:28:14 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 256:Replication complete

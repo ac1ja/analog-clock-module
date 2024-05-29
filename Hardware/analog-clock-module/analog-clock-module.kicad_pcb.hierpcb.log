@@ -1,0 +1,22 @@
+Plugin v0.0.1 running on KiCad 7.0.11-7.0.11~ubuntu22.04.1 and Python 3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0] on linux.
+Imported /home/joe/git/analog-clock-module/Hardware/analog-clock-module/ClockInnerHand.kicad_pcb, with 10 footprints, 28 tracks, and 0 drawings.
+
+├─ Clock Inner Hand1 (+ PCB /home/joe/git/analog-clock-module/Hardware/analog-clock-module/ClockInnerHand.kicad_pcb)
+├─ Clock Inner Hand (+ PCB /home/joe/git/analog-clock-module/Hardware/analog-clock-module/ClockInnerHand.kicad_pcb)
+PCB /home/joe/git/analog-clock-module/Hardware/analog-clock-module/ClockInnerHand.kicad_pcb
+  /b69d5859/f9457975: D206
+  /b69d5859/f5e8ff5e: D208
+  /b69d5859/04eff4c4: D201
+  /b69d5859/0ece1f05: D203
+  /b69d5859/2daeec3b: D204
+  /b69d5859/3d459df6: D202
+  /b69d5859/a9673fd9: D207
+  /b69d5859/4b370403: D210
+  /b69d5859/5f5806f9: D205
+  /b69d5859/7fbbbc1d: D209
+Selected for 0 : /home/joe/git/analog-clock-module/Hardware/analog-clock-module/ClockInnerHand.kicad_pcb
+Anchors  (D201): ['D201', 'D202', 'D203', 'D204', 'D205', 'D206', 'D207', 'D208', 'D209', 'D210']
+ERR.2	anchor not found on target
+ Message: Expected path /b69d5859-e1f6-4c2b-8a63-fbdbe0845d72/b69d5859-e1f6-4c2b-8a63-fbdbe0845d72/04eff4c4-75d5-4612-9a79-72a9d7f552f3
+ SubPCB: /home/joe/git/analog-clock-module/Hardware/analog-clock-module/ClockInnerHand.kicad_pcb
+Saved.
