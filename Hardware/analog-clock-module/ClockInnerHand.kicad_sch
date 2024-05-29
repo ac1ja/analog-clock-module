@@ -344,7 +344,7 @@
     (uuid 94217d63-b7d9-4596-8ffc-31c0d677827e)
   )
 
-  (hierarchical_label "DOUT" (shape output) (at 250.19 93.98 0) (fields_autoplaced)
+  (hierarchical_label "DOUT" (shape output) (at 248.92 93.98 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 0f10c6be-fb1b-46f3-b438-096fd64a7b3d)
   )
