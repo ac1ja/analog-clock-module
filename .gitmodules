@@ -1,0 +1,3 @@
+[submodule "Hardware/Hardware/analog-clock-module/Libraries/kenwoodfox-kicad-libraries"]
+	path = Hardware/Hardware/analog-clock-module/Libraries/kenwoodfox-kicad-libraries
+	url = https://github.com/KenwoodFox/kenwoodfox-kicad-libraries
