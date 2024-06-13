@@ -3,14 +3,17 @@
     "3dviewports": [],
     "design_settings": {
       "defaults": {
-        "board_outline_line_width": 0.09999999999999999,
-        "copper_line_width": 0.19999999999999998,
+        "apply_defaults_to_fp_fields": false,
+        "apply_defaults_to_fp_shapes": false,
+        "apply_defaults_to_fp_text": false,
+        "board_outline_line_width": 0.1,
+        "copper_line_width": 0.2,
         "copper_text_italic": false,
         "copper_text_size_h": 1.5,
         "copper_text_size_v": 1.5,
         "copper_text_thickness": 0.3,
         "copper_text_upright": false,
-        "courtyard_line_width": 0.049999999999999996,
+        "courtyard_line_width": 0.05,
         "dimension_precision": 4,
         "dimension_units": 3,
         "dimensions": {
@@ -21,7 +24,7 @@
           "text_position": 0,
           "units_format": 1
         },
-        "fab_line_width": 0.09999999999999999,
+        "fab_line_width": 0.1,
         "fab_text_italic": false,
         "fab_text_size_h": 1.0,
         "fab_text_size_v": 1.0,
@@ -72,9 +75,11 @@
         "duplicate_footprints": "warning",
         "extra_footprint": "warning",
         "footprint": "error",
+        "footprint_symbol_mismatch": "warning",
         "footprint_type_mismatch": "ignore",
         "hole_clearance": "error",
         "hole_near_hole": "error",
+        "holes_co_located": "warning",
         "invalid_outline": "error",
         "isolated_copper": "warning",
         "item_on_disabled_layer": "error",
@@ -116,15 +121,15 @@
         "min_copper_edge_clearance": 0.0,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.25,
-        "min_microvia_diameter": 0.19999999999999998,
-        "min_microvia_drill": 0.09999999999999999,
+        "min_microvia_diameter": 0.2,
+        "min_microvia_drill": 0.1,
         "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
-        "min_text_height": 0.7999999999999999,
+        "min_text_height": 0.8,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
         "min_track_width": 0.0,
-        "min_via_annular_width": 0.09999999999999999,
+        "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
         "solder_mask_clearance": 0.0,
         "solder_mask_min_width": 0.0,
@@ -133,9 +138,6 @@
       },
       "teardrop_options": [
         {
-          "td_allow_use_two_tracks": true,
-          "td_curve_segcount": 5,
-          "td_on_pad_in_zone": false,
           "td_onpadsmd": true,
           "td_onroundshapesonly": false,
           "td_ontrackend": false,
@@ -144,38 +146,71 @@
       ],
       "teardrop_parameters": [
         {
+          "td_allow_use_two_tracks": true,
           "td_curve_segcount": 0,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
           "td_maxlen": 1.0,
+          "td_on_pad_in_zone": false,
           "td_target_name": "td_round_shape",
           "td_width_to_size_filter_ratio": 0.9
         },
         {
+          "td_allow_use_two_tracks": true,
           "td_curve_segcount": 0,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
           "td_maxlen": 1.0,
+          "td_on_pad_in_zone": false,
           "td_target_name": "td_rect_shape",
           "td_width_to_size_filter_ratio": 0.9
         },
         {
+          "td_allow_use_two_tracks": true,
           "td_curve_segcount": 0,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
           "td_maxlen": 1.0,
+          "td_on_pad_in_zone": false,
           "td_target_name": "td_track_end",
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
       "track_widths": [
         0.0,
+        0.32,
         0.8,
         1.0
       ],
+      "tuning_pattern_settings": {
+        "diff_pair_defaults": {
+          "corner_radius_percentage": 80,
+          "corner_style": 1,
+          "max_amplitude": 1.0,
+          "min_amplitude": 0.2,
+          "single_sided": false,
+          "spacing": 1.0
+        },
+        "diff_pair_skew_defaults": {
+          "corner_radius_percentage": 80,
+          "corner_style": 1,
+          "max_amplitude": 1.0,
+          "min_amplitude": 0.2,
+          "single_sided": false,
+          "spacing": 0.6
+        },
+        "single_track_defaults": {
+          "corner_radius_percentage": 80,
+          "corner_style": 1,
+          "max_amplitude": 1.0,
+          "min_amplitude": 0.2,
+          "single_sided": false,
+          "spacing": 0.6
+        }
+      },
       "via_dimensions": [
         {
           "diameter": 0.0,
@@ -460,6 +495,7 @@
   },
   "schematic": {
     "annotate_start_num": 0,
+    "bom_export_filename": "",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -559,23 +595,315 @@
   "sheets": [
     [
       "894f620e-3404-4a40-a2a7-513bc1d5f99b",
-      ""
+      "Root"
     ],
     [
       "179f5a98-f8bd-4038-9406-f4613d85b5ff",
       "Quadrant1"
     ],
     [
+      "ca091fae-5cc6-41c3-a11e-2606e5a564c4",
+      "Hour1"
+    ],
+    [
+      "11dd3f93-1f84-41cf-9ce9-61ba117b3c2a",
+      "Clock Inner Hand2"
+    ],
+    [
+      "bc0cc629-b897-467e-b044-9901b20aadb9",
+      "Clock Inner Hand1"
+    ],
+    [
+      "3f288906-0c60-4b59-ab99-a47bb88e7ea0",
+      "Alphanumeric Display"
+    ],
+    [
+      "2c579c86-d8ea-4e99-8fb1-2a7d60238e97",
+      "Clock Inner Hand4"
+    ],
+    [
+      "de706ff1-54f9-4bef-a52f-63ff8296a23c",
+      "Clock Inner Hand5"
+    ],
+    [
+      "deefe0d9-3ac6-4cb5-b227-73e5e7033595",
+      "Clock Inner Hand3"
+    ],
+    [
+      "d2c4501f-ff3c-462b-a611-5ac990a6576c",
+      "Hour2"
+    ],
+    [
+      "11dd3f93-1f84-41cf-9ce9-61ba117b3c2a",
+      "Clock Inner Hand2"
+    ],
+    [
+      "bc0cc629-b897-467e-b044-9901b20aadb9",
+      "Clock Inner Hand1"
+    ],
+    [
+      "2c579c86-d8ea-4e99-8fb1-2a7d60238e97",
+      "Clock Inner Hand4"
+    ],
+    [
+      "de706ff1-54f9-4bef-a52f-63ff8296a23c",
+      "Clock Inner Hand5"
+    ],
+    [
+      "deefe0d9-3ac6-4cb5-b227-73e5e7033595",
+      "Clock Inner Hand3"
+    ],
+    [
+      "f8289761-0a69-406a-b2af-42852f9e645e",
+      "Hour3"
+    ],
+    [
+      "11dd3f93-1f84-41cf-9ce9-61ba117b3c2a",
+      "Clock Inner Hand2"
+    ],
+    [
+      "bc0cc629-b897-467e-b044-9901b20aadb9",
+      "Clock Inner Hand1"
+    ],
+    [
+      "2c579c86-d8ea-4e99-8fb1-2a7d60238e97",
+      "Clock Inner Hand4"
+    ],
+    [
+      "de706ff1-54f9-4bef-a52f-63ff8296a23c",
+      "Clock Inner Hand5"
+    ],
+    [
+      "deefe0d9-3ac6-4cb5-b227-73e5e7033595",
+      "Clock Inner Hand3"
+    ],
+    [
       "8e0e0436-7a55-4891-a851-b9aad8f370ab",
       "Quadrant2"
+    ],
+    [
+      "ca091fae-5cc6-41c3-a11e-2606e5a564c4",
+      "Hour1"
+    ],
+    [
+      "11dd3f93-1f84-41cf-9ce9-61ba117b3c2a",
+      "Clock Inner Hand2"
+    ],
+    [
+      "bc0cc629-b897-467e-b044-9901b20aadb9",
+      "Clock Inner Hand1"
+    ],
+    [
+      "2c579c86-d8ea-4e99-8fb1-2a7d60238e97",
+      "Clock Inner Hand4"
+    ],
+    [
+      "de706ff1-54f9-4bef-a52f-63ff8296a23c",
+      "Clock Inner Hand5"
+    ],
+    [
+      "deefe0d9-3ac6-4cb5-b227-73e5e7033595",
+      "Clock Inner Hand3"
+    ],
+    [
+      "d2c4501f-ff3c-462b-a611-5ac990a6576c",
+      "Hour2"
+    ],
+    [
+      "11dd3f93-1f84-41cf-9ce9-61ba117b3c2a",
+      "Clock Inner Hand2"
+    ],
+    [
+      "bc0cc629-b897-467e-b044-9901b20aadb9",
+      "Clock Inner Hand1"
+    ],
+    [
+      "2c579c86-d8ea-4e99-8fb1-2a7d60238e97",
+      "Clock Inner Hand4"
+    ],
+    [
+      "de706ff1-54f9-4bef-a52f-63ff8296a23c",
+      "Clock Inner Hand5"
+    ],
+    [
+      "deefe0d9-3ac6-4cb5-b227-73e5e7033595",
+      "Clock Inner Hand3"
+    ],
+    [
+      "f8289761-0a69-406a-b2af-42852f9e645e",
+      "Hour3"
+    ],
+    [
+      "11dd3f93-1f84-41cf-9ce9-61ba117b3c2a",
+      "Clock Inner Hand2"
+    ],
+    [
+      "bc0cc629-b897-467e-b044-9901b20aadb9",
+      "Clock Inner Hand1"
+    ],
+    [
+      "2c579c86-d8ea-4e99-8fb1-2a7d60238e97",
+      "Clock Inner Hand4"
+    ],
+    [
+      "de706ff1-54f9-4bef-a52f-63ff8296a23c",
+      "Clock Inner Hand5"
+    ],
+    [
+      "deefe0d9-3ac6-4cb5-b227-73e5e7033595",
+      "Clock Inner Hand3"
     ],
     [
       "19ab4b74-7dcb-4ced-9faf-5a47006b8c7b",
       "Quadrant3"
     ],
     [
+      "ca091fae-5cc6-41c3-a11e-2606e5a564c4",
+      "Hour1"
+    ],
+    [
+      "11dd3f93-1f84-41cf-9ce9-61ba117b3c2a",
+      "Clock Inner Hand2"
+    ],
+    [
+      "bc0cc629-b897-467e-b044-9901b20aadb9",
+      "Clock Inner Hand1"
+    ],
+    [
+      "2c579c86-d8ea-4e99-8fb1-2a7d60238e97",
+      "Clock Inner Hand4"
+    ],
+    [
+      "de706ff1-54f9-4bef-a52f-63ff8296a23c",
+      "Clock Inner Hand5"
+    ],
+    [
+      "deefe0d9-3ac6-4cb5-b227-73e5e7033595",
+      "Clock Inner Hand3"
+    ],
+    [
+      "d2c4501f-ff3c-462b-a611-5ac990a6576c",
+      "Hour2"
+    ],
+    [
+      "11dd3f93-1f84-41cf-9ce9-61ba117b3c2a",
+      "Clock Inner Hand2"
+    ],
+    [
+      "bc0cc629-b897-467e-b044-9901b20aadb9",
+      "Clock Inner Hand1"
+    ],
+    [
+      "2c579c86-d8ea-4e99-8fb1-2a7d60238e97",
+      "Clock Inner Hand4"
+    ],
+    [
+      "de706ff1-54f9-4bef-a52f-63ff8296a23c",
+      "Clock Inner Hand5"
+    ],
+    [
+      "deefe0d9-3ac6-4cb5-b227-73e5e7033595",
+      "Clock Inner Hand3"
+    ],
+    [
+      "f8289761-0a69-406a-b2af-42852f9e645e",
+      "Hour3"
+    ],
+    [
+      "11dd3f93-1f84-41cf-9ce9-61ba117b3c2a",
+      "Clock Inner Hand2"
+    ],
+    [
+      "bc0cc629-b897-467e-b044-9901b20aadb9",
+      "Clock Inner Hand1"
+    ],
+    [
+      "2c579c86-d8ea-4e99-8fb1-2a7d60238e97",
+      "Clock Inner Hand4"
+    ],
+    [
+      "de706ff1-54f9-4bef-a52f-63ff8296a23c",
+      "Clock Inner Hand5"
+    ],
+    [
+      "deefe0d9-3ac6-4cb5-b227-73e5e7033595",
+      "Clock Inner Hand3"
+    ],
+    [
       "72cfcff3-caae-4056-a00d-449198ed83c3",
       "Quadrant4"
+    ],
+    [
+      "ca091fae-5cc6-41c3-a11e-2606e5a564c4",
+      "Hour1"
+    ],
+    [
+      "11dd3f93-1f84-41cf-9ce9-61ba117b3c2a",
+      "Clock Inner Hand2"
+    ],
+    [
+      "bc0cc629-b897-467e-b044-9901b20aadb9",
+      "Clock Inner Hand1"
+    ],
+    [
+      "2c579c86-d8ea-4e99-8fb1-2a7d60238e97",
+      "Clock Inner Hand4"
+    ],
+    [
+      "de706ff1-54f9-4bef-a52f-63ff8296a23c",
+      "Clock Inner Hand5"
+    ],
+    [
+      "deefe0d9-3ac6-4cb5-b227-73e5e7033595",
+      "Clock Inner Hand3"
+    ],
+    [
+      "d2c4501f-ff3c-462b-a611-5ac990a6576c",
+      "Hour2"
+    ],
+    [
+      "11dd3f93-1f84-41cf-9ce9-61ba117b3c2a",
+      "Clock Inner Hand2"
+    ],
+    [
+      "bc0cc629-b897-467e-b044-9901b20aadb9",
+      "Clock Inner Hand1"
+    ],
+    [
+      "2c579c86-d8ea-4e99-8fb1-2a7d60238e97",
+      "Clock Inner Hand4"
+    ],
+    [
+      "de706ff1-54f9-4bef-a52f-63ff8296a23c",
+      "Clock Inner Hand5"
+    ],
+    [
+      "deefe0d9-3ac6-4cb5-b227-73e5e7033595",
+      "Clock Inner Hand3"
+    ],
+    [
+      "f8289761-0a69-406a-b2af-42852f9e645e",
+      "Hour3"
+    ],
+    [
+      "11dd3f93-1f84-41cf-9ce9-61ba117b3c2a",
+      "Clock Inner Hand2"
+    ],
+    [
+      "bc0cc629-b897-467e-b044-9901b20aadb9",
+      "Clock Inner Hand1"
+    ],
+    [
+      "2c579c86-d8ea-4e99-8fb1-2a7d60238e97",
+      "Clock Inner Hand4"
+    ],
+    [
+      "de706ff1-54f9-4bef-a52f-63ff8296a23c",
+      "Clock Inner Hand5"
+    ],
+    [
+      "deefe0d9-3ac6-4cb5-b227-73e5e7033595",
+      "Clock Inner Hand3"
     ]
   ],
   "text_variables": {}
