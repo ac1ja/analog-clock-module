@@ -23,7 +23,7 @@ jobs:
     name: KiCad Hardware
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
           submodules: true
@@ -75,7 +75,7 @@ jobs:
 
     steps:
       # Be in our repo
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
 

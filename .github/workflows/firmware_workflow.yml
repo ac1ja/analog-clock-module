@@ -18,7 +18,7 @@ jobs:
     name: Firmware Builder
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: Cache pip
         uses: actions/cache@v2
         with:
@@ -51,7 +51,7 @@ jobs:
     name: Delinter
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: Cache pip
         uses: actions/cache@v2
         with:
