@@ -4,30 +4,41 @@
  * @brief Source code for analog-clock-module
  */
 
-// Libs
+// Core Libs
 #include <Arduino.h>
 #include <Adafruit_NeoPixel.h>
 #include <WiFiManager.h>
 
+// Other Libs
+#include "ArduinoLog.h"
+
 // Headers
 #include "boardPins.h"
+#include "constants.h"
+
+// Hardware
+Adafruit_NeoPixel pixelsRight(PIXELS_PER_QUAD, RIGHT_QUAD_PIN, NEO_GRB + NEO_KHZ800);
+// Adafruit_NeoPixel pixels(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
 
 void setup()
 {
     // Setup serial
     delay(200);
     Serial.begin(115200);
-    Serial.println(REVISION);
+    Serial.print("\n\n");
 
-    // Pins
-    pinMode(STAT_LED, OUTPUT);
+    // Setup logging
+    Log.begin(LOG_LEVEL_VERBOSE, &Serial);
+    long int _startupTime = millis();
+    Log.infoln("Begin user code. Version %s", REVISION);
+
+    // Hardware
+    pixelsRight.begin();
+
+    Log.infoln("Startup done, took %d ms", millis() - _startupTime);
 }
 
 void loop()
 {
-    // Flash LED
-    digitalWrite(STAT_LED, HIGH);
-    delay(1000);
-    digitalWrite(STAT_LED, LOW);
-    delay(1000);
+    delay(100);
 }
