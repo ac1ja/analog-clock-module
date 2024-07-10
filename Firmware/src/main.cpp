@@ -6,6 +6,8 @@
 
 // Libs
 #include <Arduino.h>
+#include <Adafruit_NeoPixel.h>
+#include <WiFiManager.h>
 
 // Headers
 #include "boardPins.h"
