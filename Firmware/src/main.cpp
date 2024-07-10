@@ -35,10 +35,14 @@ void setup()
     // Hardware
     pixelsRight.begin();
 
+    // Complete startup
     Log.infoln("Startup done, took %d ms", millis() - _startupTime);
 }
 
 void loop()
 {
+    // Main loop is scheduled by the RTOS (even when no libs are included)
+
+    // Do nothing
     delay(100);
 }
