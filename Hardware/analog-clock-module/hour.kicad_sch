@@ -1,0 +1,547 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "570c6938-c553-486e-aea1-e86c39254d5a")
+	(paper "A4")
+	(lib_symbols)
+	(wire
+		(pts
+			(xy 64.77 99.06) (xy 69.85 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0af9b7f3-d13e-4ad2-a28e-456a36c17a13")
+	)
+	(wire
+		(pts
+			(xy 162.56 99.06) (xy 165.1 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "364ea2ed-4e32-4146-80b7-d8cb4769c863")
+	)
+	(wire
+		(pts
+			(xy 194.31 99.06) (xy 196.85 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d689309-0e21-4944-bbde-cca2383e7c5d")
+	)
+	(wire
+		(pts
+			(xy 99.06 99.06) (xy 101.6 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "864c1ac6-851d-4b09-8ae1-eef5ce089908")
+	)
+	(wire
+		(pts
+			(xy 226.06 99.06) (xy 229.87 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0afd8d2-e537-42c6-95b0-b6af457ffb8c")
+	)
+	(wire
+		(pts
+			(xy 130.81 99.06) (xy 133.35 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e301fb1f-3576-413b-9265-6a8ef5a03e48")
+	)
+	(hierarchical_label "DIN"
+		(shape input)
+		(at 64.77 99.06 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "232a9094-09f2-436e-809e-369a2c48ccec")
+	)
+	(hierarchical_label "DOUT"
+		(shape output)
+		(at 229.87 99.06 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bfd4fc18-8923-484c-a4ad-8def9d4e9a5c")
+	)
+	(sheet
+		(at 101.6 95.25)
+		(size 29.21 7.62)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "11dd3f93-1f84-41cf-9ce9-61ba117b3c2a")
+		(property "Sheetname" "Clock Inner Hand2"
+			(at 101.6 94.5384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ClockInnerHand.kicad_sch"
+			(at 101.6 103.4546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "DIN" input
+			(at 101.6 99.06 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "eab52026-963b-4234-9d03-598e7770b51a")
+		)
+		(pin "DOUT" output
+			(at 130.81 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "dfb611aa-af3c-4be3-b9de-b49c8c710424")
+		)
+		(instances
+			(project "analog-clock-module"
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/179f5a98-f8bd-4038-9406-f4613d85b5ff/ca091fae-5cc6-41c3-a11e-2606e5a564c4"
+					(page "4")
+				)
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/179f5a98-f8bd-4038-9406-f4613d85b5ff/d2c4501f-ff3c-462b-a611-5ac990a6576c"
+					(page "10")
+				)
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/179f5a98-f8bd-4038-9406-f4613d85b5ff/f8289761-0a69-406a-b2af-42852f9e645e"
+					(page "16")
+				)
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/8e0e0436-7a55-4891-a851-b9aad8f370ab/ca091fae-5cc6-41c3-a11e-2606e5a564c4"
+					(page "23")
+				)
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/8e0e0436-7a55-4891-a851-b9aad8f370ab/d2c4501f-ff3c-462b-a611-5ac990a6576c"
+					(page "29")
+				)
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/8e0e0436-7a55-4891-a851-b9aad8f370ab/f8289761-0a69-406a-b2af-42852f9e645e"
+					(page "35")
+				)
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/19ab4b74-7dcb-4ced-9faf-5a47006b8c7b/ca091fae-5cc6-41c3-a11e-2606e5a564c4"
+					(page "42")
+				)
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/19ab4b74-7dcb-4ced-9faf-5a47006b8c7b/d2c4501f-ff3c-462b-a611-5ac990a6576c"
+					(page "48")
+				)
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/19ab4b74-7dcb-4ced-9faf-5a47006b8c7b/f8289761-0a69-406a-b2af-42852f9e645e"
+					(page "54")
+				)
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/72cfcff3-caae-4056-a00d-449198ed83c3/ca091fae-5cc6-41c3-a11e-2606e5a564c4"
+					(page "61")
+				)
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/72cfcff3-caae-4056-a00d-449198ed83c3/d2c4501f-ff3c-462b-a611-5ac990a6576c"
+					(page "67")
+				)
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/72cfcff3-caae-4056-a00d-449198ed83c3/f8289761-0a69-406a-b2af-42852f9e645e"
+					(page "73")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 165.1 95.25)
+		(size 29.21 7.62)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "2c579c86-d8ea-4e99-8fb1-2a7d60238e97")
+		(property "Sheetname" "Clock Inner Hand4"
+			(at 165.1 94.5384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ClockInnerHand.kicad_sch"
+			(at 165.1 103.4546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "DIN" input
+			(at 165.1 99.06 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "5a34b5db-a3d8-40e5-a37c-29bf13303590")
+		)
+		(pin "DOUT" output
+			(at 194.31 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "01e0238d-2777-45a8-b32e-905fdac0e5ee")
+		)
+		(instances
+			(project "analog-clock-module"
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/179f5a98-f8bd-4038-9406-f4613d85b5ff/ca091fae-5cc6-41c3-a11e-2606e5a564c4"
+					(page "6")
+				)
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/179f5a98-f8bd-4038-9406-f4613d85b5ff/d2c4501f-ff3c-462b-a611-5ac990a6576c"
+					(page "12")
+				)
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/179f5a98-f8bd-4038-9406-f4613d85b5ff/f8289761-0a69-406a-b2af-42852f9e645e"
+					(page "18")
+				)
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/8e0e0436-7a55-4891-a851-b9aad8f370ab/ca091fae-5cc6-41c3-a11e-2606e5a564c4"
+					(page "25")
+				)
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/8e0e0436-7a55-4891-a851-b9aad8f370ab/d2c4501f-ff3c-462b-a611-5ac990a6576c"
+					(page "31")
+				)
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/8e0e0436-7a55-4891-a851-b9aad8f370ab/f8289761-0a69-406a-b2af-42852f9e645e"
+					(page "37")
+				)
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/19ab4b74-7dcb-4ced-9faf-5a47006b8c7b/ca091fae-5cc6-41c3-a11e-2606e5a564c4"
+					(page "44")
+				)
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/19ab4b74-7dcb-4ced-9faf-5a47006b8c7b/d2c4501f-ff3c-462b-a611-5ac990a6576c"
+					(page "50")
+				)
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/19ab4b74-7dcb-4ced-9faf-5a47006b8c7b/f8289761-0a69-406a-b2af-42852f9e645e"
+					(page "56")
+				)
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/72cfcff3-caae-4056-a00d-449198ed83c3/ca091fae-5cc6-41c3-a11e-2606e5a564c4"
+					(page "63")
+				)
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/72cfcff3-caae-4056-a00d-449198ed83c3/d2c4501f-ff3c-462b-a611-5ac990a6576c"
+					(page "69")
+				)
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/72cfcff3-caae-4056-a00d-449198ed83c3/f8289761-0a69-406a-b2af-42852f9e645e"
+					(page "75")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 69.85 95.25)
+		(size 29.21 7.62)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "bc0cc629-b897-467e-b044-9901b20aadb9")
+		(property "Sheetname" "Clock Inner Hand1"
+			(at 69.85 94.5384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ClockInnerHand.kicad_sch"
+			(at 69.85 103.4546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "DIN" input
+			(at 69.85 99.06 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "b1674f69-be19-4295-8dbc-72ee5ce2ad2b")
+		)
+		(pin "DOUT" output
+			(at 99.06 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "80eb345f-a2cd-40c0-94bb-553e6d817328")
+		)
+		(instances
+			(project "analog-clock-module"
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/179f5a98-f8bd-4038-9406-f4613d85b5ff/ca091fae-5cc6-41c3-a11e-2606e5a564c4"
+					(page "5")
+				)
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/179f5a98-f8bd-4038-9406-f4613d85b5ff/d2c4501f-ff3c-462b-a611-5ac990a6576c"
+					(page "11")
+				)
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/179f5a98-f8bd-4038-9406-f4613d85b5ff/f8289761-0a69-406a-b2af-42852f9e645e"
+					(page "17")
+				)
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/8e0e0436-7a55-4891-a851-b9aad8f370ab/ca091fae-5cc6-41c3-a11e-2606e5a564c4"
+					(page "24")
+				)
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/8e0e0436-7a55-4891-a851-b9aad8f370ab/d2c4501f-ff3c-462b-a611-5ac990a6576c"
+					(page "30")
+				)
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/8e0e0436-7a55-4891-a851-b9aad8f370ab/f8289761-0a69-406a-b2af-42852f9e645e"
+					(page "36")
+				)
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/19ab4b74-7dcb-4ced-9faf-5a47006b8c7b/ca091fae-5cc6-41c3-a11e-2606e5a564c4"
+					(page "43")
+				)
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/19ab4b74-7dcb-4ced-9faf-5a47006b8c7b/d2c4501f-ff3c-462b-a611-5ac990a6576c"
+					(page "49")
+				)
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/19ab4b74-7dcb-4ced-9faf-5a47006b8c7b/f8289761-0a69-406a-b2af-42852f9e645e"
+					(page "55")
+				)
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/72cfcff3-caae-4056-a00d-449198ed83c3/ca091fae-5cc6-41c3-a11e-2606e5a564c4"
+					(page "62")
+				)
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/72cfcff3-caae-4056-a00d-449198ed83c3/d2c4501f-ff3c-462b-a611-5ac990a6576c"
+					(page "68")
+				)
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/72cfcff3-caae-4056-a00d-449198ed83c3/f8289761-0a69-406a-b2af-42852f9e645e"
+					(page "74")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 196.85 95.25)
+		(size 29.21 7.62)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "de706ff1-54f9-4bef-a52f-63ff8296a23c")
+		(property "Sheetname" "Clock Inner Hand5"
+			(at 196.85 94.5384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ClockInnerHand.kicad_sch"
+			(at 196.85 103.4546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "DIN" input
+			(at 196.85 99.06 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "19e6b09c-b48c-4057-b637-c84df11feffb")
+		)
+		(pin "DOUT" output
+			(at 226.06 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "3931c147-e262-4d52-a568-ed4ac54ad350")
+		)
+		(instances
+			(project "analog-clock-module"
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/179f5a98-f8bd-4038-9406-f4613d85b5ff/ca091fae-5cc6-41c3-a11e-2606e5a564c4"
+					(page "7")
+				)
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/179f5a98-f8bd-4038-9406-f4613d85b5ff/d2c4501f-ff3c-462b-a611-5ac990a6576c"
+					(page "13")
+				)
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/179f5a98-f8bd-4038-9406-f4613d85b5ff/f8289761-0a69-406a-b2af-42852f9e645e"
+					(page "19")
+				)
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/8e0e0436-7a55-4891-a851-b9aad8f370ab/ca091fae-5cc6-41c3-a11e-2606e5a564c4"
+					(page "26")
+				)
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/8e0e0436-7a55-4891-a851-b9aad8f370ab/d2c4501f-ff3c-462b-a611-5ac990a6576c"
+					(page "32")
+				)
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/8e0e0436-7a55-4891-a851-b9aad8f370ab/f8289761-0a69-406a-b2af-42852f9e645e"
+					(page "38")
+				)
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/19ab4b74-7dcb-4ced-9faf-5a47006b8c7b/ca091fae-5cc6-41c3-a11e-2606e5a564c4"
+					(page "45")
+				)
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/19ab4b74-7dcb-4ced-9faf-5a47006b8c7b/d2c4501f-ff3c-462b-a611-5ac990a6576c"
+					(page "51")
+				)
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/19ab4b74-7dcb-4ced-9faf-5a47006b8c7b/f8289761-0a69-406a-b2af-42852f9e645e"
+					(page "57")
+				)
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/72cfcff3-caae-4056-a00d-449198ed83c3/ca091fae-5cc6-41c3-a11e-2606e5a564c4"
+					(page "64")
+				)
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/72cfcff3-caae-4056-a00d-449198ed83c3/d2c4501f-ff3c-462b-a611-5ac990a6576c"
+					(page "70")
+				)
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/72cfcff3-caae-4056-a00d-449198ed83c3/f8289761-0a69-406a-b2af-42852f9e645e"
+					(page "76")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 133.35 95.25)
+		(size 29.21 7.62)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "deefe0d9-3ac6-4cb5-b227-73e5e7033595")
+		(property "Sheetname" "Clock Inner Hand3"
+			(at 133.35 94.5384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ClockInnerHand.kicad_sch"
+			(at 133.35 103.4546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "DIN" input
+			(at 133.35 99.06 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "7b359a2a-300c-40c6-b192-6bc9c99008e5")
+		)
+		(pin "DOUT" output
+			(at 162.56 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "45c4d5e6-3090-4285-a1b9-8d1b57d922c0")
+		)
+		(instances
+			(project "analog-clock-module"
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/179f5a98-f8bd-4038-9406-f4613d85b5ff/ca091fae-5cc6-41c3-a11e-2606e5a564c4"
+					(page "8")
+				)
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/179f5a98-f8bd-4038-9406-f4613d85b5ff/d2c4501f-ff3c-462b-a611-5ac990a6576c"
+					(page "14")
+				)
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/179f5a98-f8bd-4038-9406-f4613d85b5ff/f8289761-0a69-406a-b2af-42852f9e645e"
+					(page "20")
+				)
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/8e0e0436-7a55-4891-a851-b9aad8f370ab/ca091fae-5cc6-41c3-a11e-2606e5a564c4"
+					(page "27")
+				)
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/8e0e0436-7a55-4891-a851-b9aad8f370ab/d2c4501f-ff3c-462b-a611-5ac990a6576c"
+					(page "33")
+				)
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/8e0e0436-7a55-4891-a851-b9aad8f370ab/f8289761-0a69-406a-b2af-42852f9e645e"
+					(page "39")
+				)
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/19ab4b74-7dcb-4ced-9faf-5a47006b8c7b/ca091fae-5cc6-41c3-a11e-2606e5a564c4"
+					(page "46")
+				)
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/19ab4b74-7dcb-4ced-9faf-5a47006b8c7b/d2c4501f-ff3c-462b-a611-5ac990a6576c"
+					(page "52")
+				)
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/19ab4b74-7dcb-4ced-9faf-5a47006b8c7b/f8289761-0a69-406a-b2af-42852f9e645e"
+					(page "58")
+				)
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/72cfcff3-caae-4056-a00d-449198ed83c3/ca091fae-5cc6-41c3-a11e-2606e5a564c4"
+					(page "65")
+				)
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/72cfcff3-caae-4056-a00d-449198ed83c3/d2c4501f-ff3c-462b-a611-5ac990a6576c"
+					(page "71")
+				)
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b/72cfcff3-caae-4056-a00d-449198ed83c3/f8289761-0a69-406a-b2af-42852f9e645e"
+					(page "77")
+				)
+			)
+		)
+	)
+)

@@ -23,12 +23,12 @@ jobs:
     name: KiCad Hardware
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
           submodules: true
 
-      - uses: INTI-CMNB/KiBot@v2_k7
+      - uses: INTI-CMNB/KiBot@v2_k8
         with:
           # Config file
           config: Hardware/config.kibot.yaml
@@ -75,7 +75,7 @@ jobs:
 
     steps:
       # Be in our repo
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
 

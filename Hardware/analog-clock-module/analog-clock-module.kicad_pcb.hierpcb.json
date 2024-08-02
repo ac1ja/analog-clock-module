@@ -1,0 +1,18 @@
+{
+  "subpcb": {
+    "ClockInnerHand.kicad_pcb": {
+      "anchor": "D201"
+    }
+  },
+  "sheet": {
+    "": {
+      "checked": false
+    },
+    "/a2af7cd5-f3c2-4e4c-be42-1832abe7bb39": {
+      "checked": false
+    },
+    "/b69d5859-e1f6-4c2b-8a63-fbdbe0845d72": {
+      "checked": true
+    }
+  }
+}
