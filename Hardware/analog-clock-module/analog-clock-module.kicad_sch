@@ -2216,7 +2216,7 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 78.74) (xy 220.98 78.74)
+			(xy 185.42 78.74) (xy 208.28 78.74)
 		)
 		(stroke
 			(width 0)
@@ -2243,6 +2243,16 @@
 			(type default)
 		)
 		(uuid "2edb2d78-b206-4fc4-a207-9d196664886b")
+	)
+	(wire
+		(pts
+			(xy 213.36 40.64) (xy 220.98 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31df66e6-fc20-4eaa-982d-1f6cff3e0caa")
 	)
 	(wire
 		(pts
@@ -2303,6 +2313,16 @@
 			(type default)
 		)
 		(uuid "40abae17-6bae-4616-950a-6ee715f931fb")
+	)
+	(wire
+		(pts
+			(xy 213.36 78.74) (xy 220.98 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43c1b458-2acf-441a-9de5-b3f9405978c4")
 	)
 	(wire
 		(pts
@@ -2456,7 +2476,7 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 40.64) (xy 220.98 40.64)
+			(xy 185.42 40.64) (xy 208.28 40.64)
 		)
 		(stroke
 			(width 0)
@@ -2705,7 +2725,7 @@
 		(uuid "fddbb982-2ff6-464e-951c-4526b6d8fc13")
 	)
 	(label "RIGHT_QUADRANT"
-		(at 201.93 40.64 0)
+		(at 185.42 40.64 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2727,7 +2747,7 @@
 		(uuid "6e599005-1cdf-4d8b-94fc-c0d607b36027")
 	)
 	(label "LEFT_QUADRANT"
-		(at 201.93 78.74 0)
+		(at 185.42 78.74 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2923,6 +2943,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 210.82 40.64 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "15f22fdb-25ca-4847-80be-f2693d242678")
+		(property "Reference" "R1"
+			(at 210.82 35.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "500R"
+			(at 210.82 38.1 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
+			(at 210.82 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 210.82 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 210.82 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "40cf8589-f529-4282-80fb-e301f6d39833")
+		)
+		(pin "1"
+			(uuid "45004e67-27f2-4a5c-ba8c-cf9c9c4ef6c3")
+		)
+		(instances
+			(project "analog-clock-module"
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 241.3 25.4 0)
 		(unit 1)
@@ -2982,6 +3070,74 @@
 			(project "analog-clock-module"
 				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b"
 					(reference "#PWR0108")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 210.82 78.74 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "22a09f6f-597c-4810-90a4-1d5df979cbdb")
+		(property "Reference" "R2"
+			(at 210.82 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "500R"
+			(at 210.82 76.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
+			(at 210.82 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 210.82 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 210.82 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0667f519-c86b-4957-a8f6-a8f3140be5d1")
+		)
+		(pin "1"
+			(uuid "93212217-3589-4448-8eb1-59e32e7dd607")
+		)
+		(instances
+			(project "analog-clock-module"
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b"
+					(reference "R2")
 					(unit 1)
 				)
 			)
